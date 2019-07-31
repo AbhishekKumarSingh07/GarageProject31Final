@@ -1,0 +1,53 @@
+﻿@section css{
+    <style>
+        body {
+            background-image: url('../../images/servicing.jpg');
+            background-size: cover;
+        }
+        h1{
+            color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkblue;
+        }
+    </style>
+}
+
+
+<h1 class="akkiJumbotron" style="color:darkolivegreen;text-align:center;font-size:120px;font-family:'Gentium Basic';opacity:0.8;">GARAGE</h1>
+@*<div style=" max-width :700px">
+    <img class="mySlides" src="~/carImages/car1.jpg" style="align-content:center; width:100%;">
+    <img class="mySlides" src="~/carImages/car2.jpg" style="width:100%;">
+    <img class="mySlides" src="~/carImages/car3.jpg" style="width:100%;">
+</div>*@
+<br />
+<div class="row">
+    <div class="col-md-4" style="display:inline-flex; align-content:flex-start;">
+        <a class="btn btn-primary" style="font-size:25px;text-align:left" href="https://www.cardekho.com/newcars">New Cars In India &raquo;</a>
+    </div>
+    <div class="col-md-4" style="display:inline-flex; align-content:center;">
+        <a class="btn btn-warning" style="text-align:center;font-size:25px;" href="https://www.moneycrashers.com/diy-car-maintenance-tips-checklist/">Car Maintenance Tips &raquo;</a>
+    </div>
+    <div class="col-md-4" style=" display:inline-flex; align-content:flex-end;">
+        <a class="btn btn-success" style="text-align:right;font-size:25px;" href="https://www.cars24.com/mkt/?utm_source=google&utm_medium=cpc&utm_campaign=NB&utm_source=google&utm_medium=adwords&utm_keyword=car%20sales&utm_matchtype=e&utm_device=c&adgroup_id=59758016524&campaign_id=1153579885&gclid=EAIaIQobChMI8-rY3cjM4wIVlx0rCh3bWwMGEAAYAiAAEgJ1QPD_BwE">Sell your Car &raquo;</a>
+    </div>
+</div>
+
+@*@section scripts{
+    <script>
+       
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        
+    </script>
+}*@
