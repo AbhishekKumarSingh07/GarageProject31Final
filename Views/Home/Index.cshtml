@@ -1,53 +1,280 @@
 ﻿@section css{
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
-            background-image: url('../../images/servicing.jpg');
-            background-size: cover;
+            background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url('../../images/servicing.jpg');
+            background-size: 100%;
+            background-repeat: no-repeat;
         }
-        h1{
+
+        /*header{
+                background-image:url('../../carImages/car3.jpg;');
+                background-size:cover;
+                background-repeat:no-repeat;
+
+            }*/
+
+        h1 {
             color: white;
-  text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkblue;
+            text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkblue;
+        }
+
+        /* logo*/
+        .featured_in_logo {
+            height: 72px;
+            padding-top: 20px;
+        }
+
+        .logo {
+            display: inline-block;
+        }
+
+        .logo {
+            text-align: center;
+        }
+
+        .logo_image li {
+            margin-left: 20px;
+            /*display: inline-block;*/
+        }
+
+        .logo {
+            text-align: center;
+        }
+
+        .logo_image li {
+            margin-left: 20px;
+            /*display: inline-block;*/
+        }
+
+        .logo {
+            text-align: center;
+        }
+
+        .car_logo {
+            height: 80px;
+            width: 100px;
+        }
+
+
+        .logo_image li {
+            padding: 20px;
+            display: inline-block;
+        }
+
+        .logo_image img {
+            width: 100px;
+            height: 100px;
+        }
+
+
+        /*END/ screen width 380px*/
+
+        .logo_image li {
+            padding: 20px;
+            display: inline-block;
+        }
+
+        .logo_image img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .logo_image:hover {
+            animation: bounce 1s;
+        }
+
+        /* Background Range Service*/
+        #range-service {
+            /*width: 370px;
+        height:300px;*/
+            /*margin-left: -4px;*/
+            margin-top: 50px;
+        }
+        /*Upper Image*/
+        .backRange {
+            background-image: url('../../carImages/car2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            align-content: center;
+        }
+
+        .block {
+            background-image: url('../../carImages/car2.jpg');
+            display: compact;
+            width: 100%;
+            border: none;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
         }
     </style>
 }
 
 
-<h1 class="akkiJumbotron" style="color:darkolivegreen;text-align:center;font-size:120px;font-family:'Gentium Basic';opacity:0.8;">GARAGE</h1>
-@*<div style=" max-width :700px">
-    <img class="mySlides" src="~/carImages/car1.jpg" style="align-content:center; width:100%;">
-    <img class="mySlides" src="~/carImages/car2.jpg" style="width:100%;">
-    <img class="mySlides" src="~/carImages/car3.jpg" style="width:100%;">
-</div>*@
+
+<div>
+    <img class="center-block" style="width:150px;height:100px;margin-bottom:0; " src="~/backgroundImages/logoMain.png" />
+    <h2 style="margin-top:0; text-align:center; font-family:'Bell MT';font-size:45px;"><strong><span style="color:cadetblue;">SERVICING</span> <span style="color:darkred;">KIYA </span><span style="color:cadetblue;">KYA?</span></strong></h2>
+</div>
 <br />
-<div class="row">
-    <div class="col-md-4" style="display:inline-flex; align-content:flex-start;">
-        <a class="btn btn-primary" style="font-size:25px;text-align:left" href="https://www.cardekho.com/newcars">New Cars In India &raquo;</a>
+<br />
+<br />
+
+<header>
+    <div class="block">
+        <!-- HEADER LEFT -->
+
+
+        <h3 class="main_title" style="font-family:'Berlin Sans FB';font-size:40px;color:white;text-align:center">DOES YOUR CAR <span style="font-family:'Berlin Sans FB';font-size:40px;color:aqua;text-align:center">NEED A SERVICING ? </span></h3>
+        <p class="sub_statement" style="font-family:'Berlin Sans FB';font-size:30px;color:darkgreen;text-align:center">Our service is the Key to a fresh Start</p>
+        <img src="~/backgroundImages/RangeOfServices.png" id="range-service" class="img-responsive">
+
+        <center>
+            <div style="padding: 20px;" id="save_statement">
+                <span id="save_statement1" style="font-family:'Berlin Sans FB';font-size:30px;color:aqua;">Save Upto</span>  <span id="save_statement2" style="font-family:'Berlin Sans FB';font-size:30px;color:white;">40%</span>
+            </div>
+        </center>
+
+
+
     </div>
-    <div class="col-md-4" style="display:inline-flex; align-content:center;">
-        <a class="btn btn-warning" style="text-align:center;font-size:25px;" href="https://www.moneycrashers.com/diy-car-maintenance-tips-checklist/">Car Maintenance Tips &raquo;</a>
+
+
+</header>
+@*<header class="backRange">
+        <div class="col-sm-8 " style="opacity:0.9;">
+
+
+            <h3 class="main_title" style="font-family:'Berlin Sans FB';font-size:40px;color:yellow;text-align:center">DOES YOUR CAR <span style="font-family:'Berlin Sans FB';font-size:40px;color:aqua;text-align:center">NEED A SERVICING ? </span></h3>
+            <p class="sub_statement" style="font-family:'Berlin Sans FB';font-size:30px;color:darkgreen;text-align:center">Our service is the Key to a fresh Start</p>
+            <img src="~/backgroundImages/RangeOfServices.png" id="range-service" class="img-responsive">
+
+            <center>
+                <div style="padding: 10px;" id="save_statement">
+                    <span id="save_statement1" style="font-family:'Berlin Sans FB';font-size:20px;color:aqua;">Save Upto</span>  <span id="save_statement2" style="font-family:'Berlin Sans FB';font-size:20px;color:white;">40%</span>
+                </div>
+            </center>
+
+        </div>
+    </header>*@
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<div class="jumbotron" style="background-color:white;">
+
+    <div class="row ">
+        <div class="col-md-12 carlogo">
+            <h2 class="reduce_when_responsive" style="padding: 10px; text-align:center;">We Cater All Multi-brand Cars  </h2>
+
+            <div class="row ">
+                <ul class="logo_image" style="margin-left: -50px;">
+
+                    <li><img src="~/logo/suzuki.jpeg" alt="Maruti suzuki"></li>
+                    <li><img src="~/logo/chevrolet.jpeg" alt="chevrolet"></li>
+                    <li><img src="~/logo/tata.png" alt="tata"></li>
+                    <li><img src="~/logo/hyundai.jpeg" alt="Hyundai"></li>
+                    <li><img src="~/logo/honda.jpeg" alt="honda"></li>
+                    <li><img src="~/logo/nissan.jpeg" alt="nissan"></li>
+
+                </ul>
+            </div>
+
+
+
+            <div class="row">
+                <ul class="logo_image" style="margin-left: -50px;">
+                    <li><img src="~/logo/audi.jpeg" id="audi_img" alt="audi"></li>
+                    <li><img src="~/logo/toyota.jpeg" alt="toyota"></li>
+                    <li><img src="~/logo/bmw.jpeg" alt="bmw"></li>
+                    <li><img src="~/logo/mercedes.jpeg" alt="mercedes"></li>
+                    <li><img src="~/logo/ford.jpeg" alt="ford"></li>
+
+                    <li><img src="~/logo/landrover.jpeg" alt="landrover"></li>
+
+                </ul>
+            </div>
+
+
+
+            <div class="row">
+                <ul class="logo_image" style="margin-left: -50px;">
+                    <li><img src="~/logo/renault.jpeg" alt="renault"></li>
+                    <li><img src="~/logo/jaguar.png" alt="jaguar"></li>
+                    <li><img src="~/logo/fiat.jpeg" alt="fiat"></li>
+                    <li><img src="~/logo/volkswagen.jpeg" style="" alt="volkswagen"></li>
+                    <li><img src="~/logo/skoda.jpeg" alt="skoda"></li>
+                    <li><img src="~/logo/mahindra.png" alt="mahindra"></li>
+
+
+                </ul>
+            </div>
+
+
+            <div class="row">
+                <ul class="logo_image" style="margin-left: -50px;align-content:center;">
+
+                    <li><img src="~/logo/volvo.jpeg" alt="volvo"></li>
+                    <li><img src="~/logo/jeep.jpeg" alt="jeep"></li>
+                    <li><img src="~/logo/opel.jpeg" alt="opel"></li>
+                    <li><img src="~/logo/mesarati.jpeg" alt="mesarati"></li>
+
+                    <li><img src="~/logo/mitsubishi.png" style="width: 150px;height: 150px;" alt="mitsubishi"></li>
+
+
+                </ul>
+            </div>
+
+        </div>
+
     </div>
-    <div class="col-md-4" style=" display:inline-flex; align-content:flex-end;">
-        <a class="btn btn-success" style="text-align:right;font-size:25px;" href="https://www.cars24.com/mkt/?utm_source=google&utm_medium=cpc&utm_campaign=NB&utm_source=google&utm_medium=adwords&utm_keyword=car%20sales&utm_matchtype=e&utm_device=c&adgroup_id=59758016524&campaign_id=1153579885&gclid=EAIaIQobChMI8-rY3cjM4wIVlx0rCh3bWwMGEAAYAiAAEgJ1QPD_BwE">Sell your Car &raquo;</a>
-    </div>
+
+
 </div>
 
-@*@section scripts{
-    <script>
-       
-            var myIndex = 0;
-            carousel();
 
-            function carousel() {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
+
+
+@*<h1 class="akkiJumbotron" style="color:darkolivegreen;text-align:center;font-size:120px;font-family:'Gentium Basic';opacity:0.8;">GARAGE</h1>*@
+@*<div style=" max-width :700px">
+        <img class="mySlides" src="~/carImages/car1.jpg" style="align-content:center; width:100%;">
+        <img class="mySlides" src="~/carImages/car2.jpg" style="width:100%;">
+        <img class="mySlides" src="~/carImages/car3.jpg" style="width:100%;">
+    </div>*@
+<br />
+@*<div class="row">
+        <div class="col-md-4" style="display:inline-flex; align-content:flex-start;">
+            <a class="btn btn-primary" style="font-size:25px;text-align:left" href="https://www.cardekho.com/newcars">New Cars In India &raquo;</a>
+        </div>
+        <div class="col-md-4" style="display:inline-flex; align-content:center;">
+            <a class="btn btn-warning" style="text-align:center;font-size:25px;" href="https://www.moneycrashers.com/diy-car-maintenance-tips-checklist/">Car Maintenance Tips &raquo;</a>
+        </div>
+        <div class="col-md-4" style=" display:inline-flex; align-content:flex-end;">
+            <a class="btn btn-success" style="text-align:right;font-size:25px;" href="https://www.cars24.com/mkt/?utm_source=google&utm_medium=cpc&utm_campaign=NB&utm_source=google&utm_medium=adwords&utm_keyword=car%20sales&utm_matchtype=e&utm_device=c&adgroup_id=59758016524&campaign_id=1153579885&gclid=EAIaIQobChMI8-rY3cjM4wIVlx0rCh3bWwMGEAAYAiAAEgJ1QPD_BwE">Sell your Car &raquo;</a>
+        </div>
+    </div>*@
+
+@section scripts{
+    @*<script>
+
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) { myIndex = 1 }
+                    x[myIndex - 1].style.display = "block";
+                    setTimeout(carousel, 2000); // Change image every 2 seconds
                 }
-                myIndex++;
-                if (myIndex > x.length) { myIndex = 1 }
-                x[myIndex - 1].style.display = "block";
-                setTimeout(carousel, 2000); // Change image every 2 seconds
-            }
-        
-    </script>
-}*@
+
+        </script>*@
+}
