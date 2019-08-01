@@ -16,21 +16,15 @@
                 <td class="form-group" style="color:chocolate;">
                     @Html.TextBoxFor(m => m.ServiceCar.Miles, new { @class = "form-control" })
                 </td>
-
-                <td class="form-group" style="color:chocolate;">
-                    @Html.LabelFor(m => m.ServiceCar.Price)
-                </td>
-                <td class="form-group" style="color:chocolate;">
-                    @Html.TextBoxFor(m => m.ServiceCar.Price, new { @class = "form-control" })
-                </td>
-            </tr>
-            <tr>
                 <td class="form-group" style="color:chocolate;">
                     @Html.LabelFor(m => m.ServiceCar.Details)
                 </td>
                 <td class="form-group" style="color:chocolate;">
                     @Html.TextBoxFor(m => m.ServiceCar.Details, new { @class = "form-control" })
                 </td>
+
+            </tr>
+            <tr>               
                 <td class="form-group" style="color:chocolate;">
                     @Html.LabelFor(m => m.ServiceCar.ServiceType)
                 </td>

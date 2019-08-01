@@ -282,6 +282,7 @@
     <Compile Include="Models\ServiceRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModel\AdminAddViewModel.cs" />
     <Compile Include="ViewModel\CarAndCustomerViewModel.cs" />
     <Compile Include="ViewModel\CarAndServiceViewModel.cs" />
     <Compile Include="ViewModel\CustomerViewModel.cs" />
@@ -289,6 +290,7 @@
     <Compile Include="ViewModel\ViewCarCustomerViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="backgroundImages\DENT-SERVICE.png" />
     <Content Include="backgroundImages\logoMain.png" />
     <Content Include="backgroundImages\RangeOfServices.png" />
     <Content Include="carImages\car1.jpg" />
@@ -298,6 +300,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\validation.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

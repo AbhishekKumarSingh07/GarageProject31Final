@@ -11,6 +11,17 @@ namespace GarageProject.Controllers
     [RequireHttps]
     public class HomeController : Controller
     {
+        ApplicationDbContext db;
+
+        public HomeController()
+        {
+            db = new ApplicationDbContext();
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            db.Dispose();
+        }
         public ActionResult Index()
         {
 
@@ -19,9 +30,14 @@ namespace GarageProject.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            var viewModel = new AdminAddViewModel()
+            {
+                AddCarBrand=db.CarBrandDbs.ToList(),
+                AddCarStyle=db.CarStyleDbs.ToList(),
+                AddServiceTypes=db.CarServicesDbs.ToList()
+            };
 
-            return View();
+            return View(viewModel);
         }
 
         public ActionResult Contact()

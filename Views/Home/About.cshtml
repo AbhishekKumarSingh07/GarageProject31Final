@@ -1,7 +1,89 @@
-﻿@{
+﻿@model GarageProject.ViewModel.AdminAddViewModel
+@{
     ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+@*<h2>@ViewBag.Title.</h2>
+    <h3>@ViewBag.Message</h3>*@
 
-<p>Use this area to provide additional information.</p>
+@*<p>Use this area to provide additional information.</p>*@
+
+@section css{
+    <style>
+       
+    </style>
+}
+<h1 style="text-align:center">Admin Add Area</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th style="text-align:center">Car Brands</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var brnd in Model.AddCarBrand)
+                {
+
+                    <tr>
+                        <td style="text-align:center">@brnd.CarBrandsData</td>
+                    </tr>
+
+                }
+                <tr>
+                    <td style="text-align:center">@Html.TextBox("Add") @Html.ActionLink("Add", "")</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-4">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th style="text-align:center">Car Brands</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var style in Model.AddCarStyle)
+                {
+
+                    <tr>
+                        <td style="text-align:center">@style.CarStylesData</td>
+                    </tr>
+
+                }
+                <tr>
+                    <td style="text-align:center">@Html.TextBox("Add") @Html.ActionLink("Add", "")</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-4">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th style="text-align:center">Car Services</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var style in Model.AddServiceTypes)
+                {
+
+                    <tr>
+                        <td style="text-align:center">@style.CarServicesData    </td>
+                    </tr>
+
+                }
+                <tr>
+                    <td style="text-align:center">@Html.TextBox("Add") @Html.ActionLink("Add", "")</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
