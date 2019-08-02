@@ -269,6 +269,18 @@
     <Compile Include="Migrations\201907311553018_latestHomeMigrations.Designer.cs">
       <DependentUpon>201907311553018_latestHomeMigrations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201908020322011_dateReq.cs" />
+    <Compile Include="Migrations\201908020322011_dateReq.Designer.cs">
+      <DependentUpon>201908020322011_dateReq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908020329238_abcd.cs" />
+    <Compile Include="Migrations\201908020329238_abcd.Designer.cs">
+      <DependentUpon>201908020329238_abcd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908020416397_abcdkj.cs" />
+    <Compile Include="Migrations\201908020416397_abcdkj.Designer.cs">
+      <DependentUpon>201908020416397_abcdkj.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Car.cs" />
@@ -300,6 +312,8 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\toastr.css" />
+    <Content Include="Content\toastr.min.css" />
     <Content Include="Content\validation.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -334,6 +348,8 @@
     <Content Include="logo\volvo.jpeg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\toastr.scss" />
+    <Content Include="Content\toastr.less" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -345,6 +361,8 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\toastr.js" />
+    <Content Include="Scripts\toastr.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -429,6 +447,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201907311553018_latestHomeMigrations.resx">
       <DependentUpon>201907311553018_latestHomeMigrations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908020322011_dateReq.resx">
+      <DependentUpon>201908020322011_dateReq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908020329238_abcd.resx">
+      <DependentUpon>201908020329238_abcd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908020416397_abcdkj.resx">
+      <DependentUpon>201908020416397_abcdkj.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

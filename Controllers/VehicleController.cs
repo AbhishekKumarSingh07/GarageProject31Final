@@ -61,26 +61,36 @@ namespace GarageProject.Controllers
         public ActionResult Create(CarAndCustomerViewModel viewModel)
         {
             viewModel.Cars.ApplicationUserId = viewModel.Users.Id;
-            var car = viewModel.Cars;
-            using (var client = new HttpClient())
+            if (!ModelState.IsValid)
             {
-                client.BaseAddress = new Uri("https://localhost:44346/api/cars");
-
-                //HTTP POST
-                JsonMediaTypeFormatter formatter = new JsonMediaTypeFormatter();
-                var postTask = client.PostAsync("cars", car, formatter);
-                postTask.Wait();
-
-                var result = postTask.Result;
-                if (result.IsSuccessStatusCode)
+                return View();
+            }
+            else
+            {
+               
+                var car = viewModel.Cars;
+                using (var client = new HttpClient())
                 {
-                    return RedirectToAction("ViewCar",viewModel.Users);
+                    client.BaseAddress = new Uri("https://localhost:44346/api/cars");
+
+                    //HTTP POST
+                    JsonMediaTypeFormatter formatter = new JsonMediaTypeFormatter();
+                    var postTask = client.PostAsync("cars", car, formatter);
+                    postTask.Wait();
+
+                    var result = postTask.Result;
+                    if (result.IsSuccessStatusCode)
+                    {
+                        return RedirectToAction("ViewCar", viewModel.Users);
+                    }
                 }
             }
 
-            ModelState.AddModelError(string.Empty, "Server Error. Please contact administrator.");
 
-            return View(viewModel);
+            // ModelState.AddModelError(string.Empty, "Server Error. Please contact administrator.");
+
+            return View();
+
 
         }
 

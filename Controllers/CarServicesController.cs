@@ -31,7 +31,7 @@ namespace GarageProject.Controllers
             var viewModel = new CarAndServiceViewModel()
                 {
                     CarServicesDbs=db.CarServicesDbs.ToList(),
-                    Cars=car
+                    Cars=car                    
                 };
 
                 return View(viewModel);           
@@ -49,7 +49,7 @@ namespace GarageProject.Controllers
             var vM = new ServiceRequest()
             {
                CarId=viewModel.Cars.Id,
-               DateAdded=DateTime.Today,
+               DateRequested=DateTime.Today,
                Details=viewModel.ServiceCar.Details,
                Miles=viewModel.ServiceCar.Miles,
                Price=viewModel.ServiceCar.Price,
@@ -88,7 +88,8 @@ namespace GarageProject.Controllers
             {
                 //Car=db.Cars.Find(sReq.CarId),
                 CarId=sReq.CarId,
-                DateAdded=sReq.DateAdded,
+                Requested=sReq.DateRequested,
+                DateAdded=DateTime.Today,
                 Details=sReq.Details,
                 Miles=sReq.Miles,
                 Price=sReq.Price,
@@ -148,7 +149,8 @@ namespace GarageProject.Controllers
                     var viewModel = new CarAndServiceViewModel()
                     {
                         CarServices=readTask.Result,
-                        Cars=car
+                        Cars=car,
+                        PendingRequests=db.ServiceRequests.ToList()
                     };
                     return View(viewModel);
                 }

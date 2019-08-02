@@ -30,5 +30,9 @@ namespace GarageProject.Models
 
         [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}")]
         public DateTime DateAdded { get; set; }
+
+
+        [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}")]
+        public DateTime Requested { get; set; }
     }
 }

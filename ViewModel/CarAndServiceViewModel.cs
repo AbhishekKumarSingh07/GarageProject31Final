@@ -12,5 +12,6 @@ namespace GarageProject.ViewModel
         public CarService ServiceCar { get; set; }
         public IEnumerable<CarService> CarServices { get; set; }
         public IEnumerable<CarServicesDb> CarServicesDbs { get; set; }
+        public IEnumerable<ServiceRequest> PendingRequests { get; set; }
     }
 }

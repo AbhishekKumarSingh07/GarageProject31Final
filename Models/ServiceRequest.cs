@@ -16,8 +16,9 @@ namespace GarageProject.Models
         public double Price { get; set; }   
         public string Details { get; set; }      
         public string ServiceType { get; set; }     
-        public int CarId { get; set; }
+        public int CarId { get; set; }    
+
         [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}")]
-        public DateTime DateAdded { get; set; }
+        public DateTime  DateRequested { get; set; }
     }
 }
