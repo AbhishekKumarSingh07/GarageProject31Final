@@ -24,6 +24,7 @@ namespace GarageProject.Models
         public string Style { get; set; }
 
         [Required]
+        [RegularExpression(@"([A-Z][a-z]*)([\\s\\\'-][A-Z][a-z]*)*", ErrorMessage = "Enter valid Color Name")]
         public string Color { get; set; }
 
 

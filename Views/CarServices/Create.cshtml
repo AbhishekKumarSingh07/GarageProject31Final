@@ -15,12 +15,15 @@
                 </td>
                 <td class="form-group" style="color:chocolate;">
                     @Html.TextBoxFor(m => m.ServiceCar.Miles, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.ServiceCar.Miles)
                 </td>
                 <td class="form-group" style="color:chocolate;">
                     @Html.LabelFor(m => m.ServiceCar.Details)
                 </td>
                 <td class="form-group" style="color:chocolate;">
                     @Html.TextBoxFor(m => m.ServiceCar.Details, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.ServiceCar.Details)
+
                 </td>
 
             </tr>
@@ -30,12 +33,16 @@
                 </td>
                 <td class="form-group" style="color:chocolate;">
                     @Html.TextBoxFor(m => m.ServiceCar.Price, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.ServiceCar.Price)
+
                 </td>
                 <td class="form-group" style="color:chocolate;">
                     @Html.LabelFor(m => m.ServiceCar.ServiceType)
                 </td>
                 <td class="form-group" style="color:chocolate;">
                     @Html.DropDownListFor(m => m.ServiceCar.ServiceType, new SelectList(Model.CarServicesDbs, "CarServicesData", "CarServicesData"), "Select Service type", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.ServiceCar.ServiceType)
+
                 </td>
             </tr>
 
@@ -50,18 +57,19 @@
     }
 </div>
 @section Scripts {
-    @Scripts.Render("~/bundles/toastr")
+    @Scripts.Render("~/bundles/jqueryval")
+@Scripts.Render("~/bundles/toastr")
 <script type="text/javascript">
     function Update() {
         setTimeout(function () {
-           sub
+            sub
         }, 100000);
-        toastr.success('Submitted Succesfully', 'Submit', { timeOut:0});
+        toastr.success('Submitted Succesfully', 'Submit', { timeOut: 0 });
     }
-    //var funcBtns = {
-    //    Update:function(){
-    //        toastr.success('Request Submitted Succesfully', 'Submission', { timeOut: 1000 }, {extentedTimeOut:0 });
-    //    }
-    //};
-   </script>
+//var funcBtns = {
+//    Update:function(){
+//        toastr.success('Request Submitted Succesfully', 'Submission', { timeOut: 1000 }, {extentedTimeOut:0 });
+//    }
+//};
+</script>
 }

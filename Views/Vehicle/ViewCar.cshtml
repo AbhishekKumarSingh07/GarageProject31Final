@@ -13,6 +13,32 @@
         }
     </style>
 }
+<br />
+<br />
+
+<h1 style="color:darkslategray;font-family:Candara; text-align:center;"><strong>User Details</strong></h1>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th style="text-align:center;">First Name</th>
+            <th style="text-align:center;">Last Name</th>
+            <th style="text-align:center;">Email</th>
+            <th style="text-align:center;">City</th>
+            <th style="text-align:center;">Mobile</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align:center;">@Model.Users.FirstName</td>
+            <td style="text-align:center;">@Model.Users.LastName</td>
+            <td style="text-align:center;">@Model.Users.Email</td>
+            <td style="text-align:center;">@Model.Users.City</td>
+            <td style="text-align:center;">@Model.Users.PhoneNumber</td>
+        </tr>
+    </tbody>
+
+</table>
 
 <h1 style="color:darkslategray;font-family:Candara; text-align:center;"><strong>Car Details</strong></h1>
 
@@ -39,7 +65,7 @@
                     {
                         <th style="text-align:center;"></th>
                     }
-                    </tr>
+                </tr>
             </thead>
 
 
@@ -61,7 +87,7 @@
                             {
                                 <td><button class="btn btn-danger fa fa-trash fa-1x jq-delete " data-car="@item.Id" type="button"> </button></td>
                             }
-                            </tr>
+                        </tr>
                     </tbody>
                 }
 

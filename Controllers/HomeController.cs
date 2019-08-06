@@ -32,9 +32,9 @@ namespace GarageProject.Controllers
         {
             var viewModel = new AdminAddViewModel()
             {
-                AddCarBrand=db.CarBrandDbs.ToList(),
-                AddCarStyle=db.CarStyleDbs.ToList(),
-                AddServiceTypes=db.CarServicesDbs.ToList()
+                ShowCarBrand=db.CarBrandDbs.ToList(),
+                ShowCarStyle=db.CarStyleDbs.ToList(),
+                ShowServiceTypes=db.CarServicesDbs.ToList()
             };
 
             return View(viewModel);

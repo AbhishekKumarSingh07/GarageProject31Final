@@ -12,9 +12,11 @@ namespace GarageProject.Models
         public int Id { get; set; }
 
         [Required]
+        [RegularExpression(@"^(?:(?:\+|0{0,2})91(\s*[\ -]\s*)?|[0]?)?[789]\d{9}|(\d[ -]?){10}\d$", ErrorMessage = "Miles Cannot Contain Alphabetic Character")]
         public int Miles { get; set; }
 
         [Required]
+        [RegularExpression(@"^(?:(?:\+|0{0,2})91(\s*[\ -]\s*)?|[0]?)?[789]\d{9}|(\d[ -]?){10}\d$", ErrorMessage = "Price Cannot Contain Alphabetic Character")]
         public double Price { get; set; }
 
         [Required]

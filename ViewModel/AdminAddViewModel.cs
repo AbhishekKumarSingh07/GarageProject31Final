@@ -8,8 +8,11 @@ namespace GarageProject.ViewModel
 {
     public class AdminAddViewModel
     {
-        public IEnumerable<CarServicesDb> AddServiceTypes { get; set; }
-        public IEnumerable<CarStyleDb> AddCarStyle { get; set; }
-        public IEnumerable<CarBrandDb> AddCarBrand { get; set; }
+        public IEnumerable<CarServicesDb> ShowServiceTypes { get; set; }
+        public IEnumerable<CarStyleDb> ShowCarStyle { get; set; }
+        public IEnumerable<CarBrandDb> ShowCarBrand { get; set; }
+        public CarServicesDb AddServices { get; set; }
+        public CarStyleDb AddCarStyles { get; set; }
+        public CarBrandDb AddCarBrands { get; set; }
     }
 }

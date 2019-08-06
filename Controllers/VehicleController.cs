@@ -13,6 +13,7 @@ using System.Web.Mvc;
 
 namespace GarageProject.Controllers
 {
+    [Authorize]
     public class VehicleController : Controller
     {
         ApplicationDbContext db;
@@ -81,7 +82,10 @@ namespace GarageProject.Controllers
                     var result = postTask.Result;
                     if (result.IsSuccessStatusCode)
                     {
-                        return RedirectToAction("ViewCar", viewModel.Users);
+                        if (HttpContext.User.IsInRole("admin"))
+                            return RedirectToAction("ViewCar", viewModel.Users);
+                        else
+                            return RedirectToAction("Index", "User");
                     }
                 }
             }

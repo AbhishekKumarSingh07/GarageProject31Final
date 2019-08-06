@@ -11,6 +11,7 @@ using System.Web.Mvc;
 
 namespace GarageProject.Controllers
 {
+    [Authorize]
     public class CarServicesController : Controller
     {
         ApplicationDbContext db;

@@ -17,6 +17,7 @@
                 </td>
                 <td class="form-group" style="color:chocolate;">
                     @Html.TextBoxFor(m => m.Cars.VIN, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m=>m.Cars.VIN)
                 </td>
 
                 <td class="form-group" style="color:chocolate;">
@@ -24,6 +25,7 @@
                 </td>
                 <td class="form-group" style="color:chocolate;">
                     @Html.DropDownListFor(m => m.Cars.Brand, new SelectList(Model.CarBrandDbs, "CarBrandsData", "CarBrandsData"), "Select Brand", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Cars.Brand)
                 </td>
             </tr>
             <tr>
@@ -32,12 +34,14 @@
                 </td>
                 <td class="form-group" style="color:chocolate;">
                     @Html.TextBoxFor(m => m.Cars.Model, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Cars.Model)
                 </td>
                 <td class="form-group" style="color:chocolate;">
                     @Html.LabelFor(m => m.Cars.Style)
                 </td>
                 <td class="form-group" style="color:chocolate;">
                     @Html.DropDownListFor(m => m.Cars.Style, new SelectList(Model.CarStyleDbs, "CarStylesData", "CarStylesData"), "Select Style", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Cars.Style)
                 </td>
             </tr>
             <tr>
@@ -46,6 +50,7 @@
                 </td>
                 <td class="form-group" style="color:chocolate;">
                     @Html.TextBoxFor(m => m.Cars.Color, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Cars.Color)
                 </td>
             </tr>
         </table>
@@ -54,4 +59,6 @@
         <button class="btn btn-primary" type="submit">Save</button>
     }
 </div>
-
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
